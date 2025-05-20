@@ -1,0 +1,189 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        
+    body {
+        color: #333;
+        line-height: 1.6;
+    }
+        
+    header {
+        background-color: white;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+        
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+        
+    .logo img{
+        width: auto;
+        max-height: 50px;
+    }
+        
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+        
+    .nav-links li {
+        margin-left: 30px;
+    }
+        
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+        
+        
+    .hero {
+        position: relative;
+        height: 500px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+        
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(Fondo.jpg); /* Reemplaza con tu imagen */
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92, 99, 91, 0.5);
+        z-index: -1;
+    }  
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+        
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white;
+    }
+        
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: white;
+    }
+        
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+        
+    .btn {
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+        
+    .btn-primary {
+        background-color: rgb(87, 152, 50);
+        color: white;
+        border: 1px solid rgb(87, 152, 50);
+    }
+        
+    .btn-primary:hover {
+        background-color: #006097;
+        border-color: #006097;
+    }
+        
+    .btn-secondary {
+        background-color: white;
+        color: #0077b5;
+        border: 1px solid #0077b5;
+    }
+        
+    .btn-secondary:hover {
+        background-color: #f0f7fc;
+    }
+        
+    .disclaimer {
+        font-size: 14px;
+        color: #999;
+        font-style: italic;
+    }
+
+    .features a:hover{
+        opacity: 0.6;
+    }
+        
+    .features {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+        
+    .feature {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+        padding: 20px;
+        }
+        
+    .feature h3 {
+        font-size: 22px;
+        margin: 15px 0;
+        color: rgb(87, 152, 50);
+    }
+        
+    .feature p {
+        color: #666;
+    }
+        
+    .feature-icon {
+        font-size: 40px;
+        color: rgb(87, 152, 50);
+        margin-bottom: 15px;
+    }
+    .feature-icon img{
+        height: auto;
+        width: 100px;
+    }
+
+    .link{
+        text-decoration: none;
+    }
